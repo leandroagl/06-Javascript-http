@@ -1,3 +1,6 @@
-import { init } from "./js/chistes-pages";
+import { obtenerUsuarios } from "./js/http-provider";
+// import { init } from "./js/chistes-pages";
 
-init()
+// init()
+
+obtenerUsuarios().then( console.log );
