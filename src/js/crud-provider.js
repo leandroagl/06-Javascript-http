@@ -26,7 +26,22 @@ const crearUsuario = async( usuario ) => {
 };
 
 
+const actualizarUsuario = async( id, usuario ) => {
+
+    const resp = await fetch( `${ urlCRUD }/${ id }`, {
+        method: 'PUT',
+        body: JSON.stringify( usuario ),
+        headers: {
+            'Conten-Type': 'aplication/json'
+        }
+    });
+
+    return await resp.json();
+
+};
+
 export {
     getUsuario,
-    crearUsuario    
+    crearUsuario,
+    actualizarUsuario
 }

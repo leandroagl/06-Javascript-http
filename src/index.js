@@ -7,7 +7,13 @@ import * as CRUD from './js/crud-provider';
 // init();
 
 CRUD.getUsuario( 1 ).then(  );
+
 CRUD.crearUsuario({
     name: 'Leandro',
     job: 'Devs'
-}).then( console.log );
+}).then(  );
+
+CRUD.actualizarUsuario( 2, {
+    name: 'José',
+    job: 'Tachero'
+}).then( console.log )
