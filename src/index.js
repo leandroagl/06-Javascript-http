@@ -6,4 +6,8 @@ import * as CRUD from './js/crud-provider';
 // obtenerUsuarios();
 // init();
 
-CRUD.getUsuario( 1 ).then( console.log );
+CRUD.getUsuario( 1 ).then(  );
+CRUD.crearUsuario({
+    name: 'Leandro',
+    job: 'Devs'
+}).then( console.log );
