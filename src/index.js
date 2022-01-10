@@ -17,3 +17,5 @@ CRUD.actualizarUsuario( 2, {
     name: 'José',
     job: 'Tachero'
 }).then( console.log )
+
+CRUD.borrarUsuario( 1 ).then( console.log )
